@@ -1,0 +1,4 @@
+com\emilos\files\app\Application.class
+com\emilos\files\app\service\AsyncFilesService.class
+com\emilos\files\app\controller\FilesController.class
+com\emilos\files\app\service\FilesService.class
