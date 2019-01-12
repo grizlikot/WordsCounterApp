@@ -1,0 +1,26 @@
+<div style="text-align:center">
+  <h1>
+   {{ title }}
+  </h1>
+  <h2>Here you can upload multiple txt files</h2>
+  <ng-container>
+    <input class="inputFiles" type="file" id="file" multiple (change)="pushFilesContents($event)">
+    <button class="btn btn-primary" (click)="uploadFiles()">Count Words !</button>
+  </ng-container>
+  <div><button class="btn btn-primary" (click)="clearValues()">Refresh !</button></div>
+  <h2 [ngStyle]="{'color': successful ? 'green' : 'red'}">{{ message }}</h2>
+  <div class="app flex-row align-items-center">   
+    <div class="container"> 
+      <div class="row">
+        <div class="card col-md-3" *ngFor="let words of wordsMap | keyvalue">
+          <h4 class="file-title">File {{words.key}} </h4>
+          <div *ngFor="let word of words.value | keyvalue">
+            <p> {{word.key}} - {{word.value}} </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

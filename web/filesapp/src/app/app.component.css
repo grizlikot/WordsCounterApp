@@ -1,0 +1,15 @@
+.inputFiles {
+    display: inline-block;
+}
+
+h2.statusOK {
+    color:green;
+}
+
+h2.statusNotOK {
+    color:red;
+}
+
+.file-title {
+    border-bottom:solid;
+}
