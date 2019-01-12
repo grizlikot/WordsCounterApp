@@ -10,6 +10,6 @@ h2.statusNotOK {
     color:red;
 }
 
-.file-title {
-    border-bottom:solid;
+.custom-card {
+    padding:0px;
 }

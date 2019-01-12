@@ -12,10 +12,12 @@
   <div class="app flex-row align-items-center">   
     <div class="container"> 
       <div class="row">
-        <div class="card col-md-3" *ngFor="let words of wordsMap | keyvalue">
-          <h4 class="file-title">File {{words.key}} </h4>
-          <div *ngFor="let word of words.value | keyvalue">
-            <p> {{word.key}} - {{word.value}} </p>
+        <div class="card custom-card col-md-3" *ngFor="let words of wordsMap | keyvalue">
+          <div class="card-header">File {{words.key}} </div>
+          <div class="card-body">
+            <div *ngFor="let word of words.value | keyvalue">
+             <p> {{word.key}} - {{word.value}} </p>
+            </div>
           </div>
         </div>
       </div>
