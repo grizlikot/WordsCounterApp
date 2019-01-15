@@ -16,7 +16,7 @@ Web application (Front-end with Back-end) that allows to upload N files and coun
 3. Get results
 4. Refresh button allows to clear all fields and data
 
-# What should be additionally added
+# What is missing right now
 1. Unit tests
 2. Spring exception handlers
 3. Docker
