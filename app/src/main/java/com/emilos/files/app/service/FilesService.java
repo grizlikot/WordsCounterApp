@@ -36,7 +36,7 @@ public class FilesService {
 	
 	/**
 	 * 1.This method firstly collects words in all files to the list
-	 * 2.Secondly, repeated words are counted and list is mapped to to map
+	 * 2.Secondly, repeated words are counted and collected to the words map
 	 * 3.Map is grouped by letters range (A-G, H-N, O-U, V-Z)
 	 * 
 	 * @param MultipartFile[] uploadedFiles
